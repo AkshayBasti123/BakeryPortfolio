@@ -6,8 +6,8 @@
   <title>Sweet Crumbs Bakery</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-</head>
   <link rel="icon" href="favicon.ico">
+</head>
 <body>
   <!-- Navbar -->
   <header>
@@ -41,26 +41,68 @@
     <p>Display your bakery items here.</p>
   </section>
 
-  <section id="contact" class="placeholder">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Add your contact form & info here.</p>
+    <div class="contact-container">
+      <!-- Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Info -->
+      <div class="contact-info">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1876537159397!2d-122.421778!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5e09d9e3%3A0x2d3d65d1f9a0c2f!2sBakery!5e0!3m2!1sen!2sus!4v1680555555555"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+        <p><strong>Address:</strong> 123 Sweet St, YourCity</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> hello@sweetcrumbs.com</p>
+        <p><strong>Hours:</strong> Mon-Sat 7am – 7pm</p>
+      </div>
+    </div>
+
+    <!-- Social Hover Card -->
+    <div class="social-card">
+      <!-- From Uiverse.io by vinodjangid07 -->
+      <div class="card">
+        <div class="background"></div>
+        <div class="logo">Socials</div>
+
+        <a href="#"><div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+          <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+        </svg></span></div></a>
+
+        <a href="#"><div class="box box2"><span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+          <path d="M459.37 151.716c..."></path>
+        </svg></span></div></a>
+
+        <a href="#"><div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+          <path d="M524.531,69.836a1.5,1.5..."></path>
+        </svg></span></div></a>
+
+        <div class="box box4"></div>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Sweet Crumbs Bakery | All Rights Reserved</p>
   </footer>
 
   <!-- Cookie Consent -->
   <div class="cookie-card" id="cookieCard">
-    <svg viewBox="0 0 122.88 122.25" xmlns="http://www.w3.org/2000/svg">
-      <path d="M101.77,49.38c2.09,3.1,4.37,5.11,6.86,5.78c2.45,0.66,5.32,0.06,8.7-2.01c1.36-0.84,3.14-0.41,3.97,0.95..."></path>
-    </svg>
     <p class="cookieHeading">We use cookies.</p>
     <p class="cookieDescription">
       We use cookies to ensure you get the best experience on our website.  
       <a href="#">Read cookie policies</a>.
     </p>
-
     <div class="buttonContainer">
       <button class="acceptButton">Allow</button>
       <button class="declineButton">Decline</button>
