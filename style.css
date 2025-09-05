@@ -113,3 +113,91 @@ footer {
   color: #8B5E3C;
   font-size: 0.9rem;
 }
+
+/* Cookie Consent */
+.cookie-card {
+  width: 300px;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2000;
+}
+
+#cookieSvg {
+  width: 50px;
+}
+
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(26, 26, 26);
+}
+
+.cookieDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.cookieDescription a {
+  color: rgb(59 130 246);
+}
+
+.cookieDescription a:hover {
+  text-decoration: underline;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #7b57ff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
+  transition: all 0.3s ease;
+}
+
+.declineButton {
+  width: 80px;
+  height: 30px;
+  background-color: #dadada;
+  color: #2e2e2e;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+  transition: all 0.3s ease;
+}
+
+.acceptButton:hover {
+  background-color: #9173ff;
+}
+
+.declineButton:hover {
+  background-color: #ebebeb;
+}
+
