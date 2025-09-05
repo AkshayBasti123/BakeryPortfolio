@@ -1,214 +1,67 @@
-/* Fonts & Base Styles */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  z-index: 1000;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: #8B5E3C;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #E5989B;
-}
-
-/* Hero Section */
-.hero {
-  background: url('images/bakery-hero.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.4);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: #E5989B;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #d67a7f;
-}
-
-
-.placeholder {
-  padding: 5rem 10%;
-  text-align: center;
-}
-
-.placeholder h2 {
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #fdf6e3;
-  color: #8B5E3C;
-  font-size: 0.9rem;
-}
-
+/* Cookie card container */
 .cookie-card {
   width: 300px;
-  height: 220px;
   background-color: #fff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 30px;
-  gap: 13px;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
   position: fixed;
   bottom: 20px;
   left: 20px;
   z-index: 2000;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.6s ease;
-  pointer-events: none; /*
+  pointer-events: none;
 }
 
-
+/* When visible */
 .cookie-card.show {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-#cookieSvg {
-  width: 50px;
-}
-
-#cookieSvg g path {
-  fill: rgb(97, 81, 81);
-}
-
+/* Cookie text */
 .cookieHeading {
-  font-size: 1.2em;
-  font-weight: 800;
-  color: rgb(26, 26, 26);
+  font-weight: bold;
+  font-size: 18px;
 }
-
 .cookieDescription {
-  text-align: center;
-  font-size: 0.7em;
-  font-weight: 600;
-  color: rgb(99, 99, 99);
+  font-size: 14px;
+  color: #444;
 }
-
 .cookieDescription a {
-  color: rgb(59 130 246);
+  color: #d35400;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.cookieDescription a:hover {
-  text-decoration: underline;
-}
-
+/* Buttons */
 .buttonContainer {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
-
-.acceptButton {
-  width: 80px;
-  height: 30px;
-  background-color: #7b57ff;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
-  transition: all 0.3s ease;
-}
-
+.acceptButton,
 .declineButton {
-  width: 80px;
-  height: 30px;
-  background-color: #dadada;
-  color: #2e2e2e;
+  padding: 8px 16px;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: 600;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
-  transition: all 0.3s ease;
+  font-size: 14px;
 }
-
-.acceptButton:hover {
-  background-color: #9173ff;
+.acceptButton {
+  background: #27ae60;
+  color: white;
 }
-
-.declineButton:hover {
-  background-color: #ebebeb;
+.declineButton {
+  background: #e74c3c;
+  color: white;
 }
-
