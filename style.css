@@ -114,7 +114,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Cookie Consent */
 .cookie-card {
   width: 300px;
   height: 220px;
@@ -131,6 +130,18 @@ footer {
   bottom: 20px;
   left: 20px;
   z-index: 2000;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.6s ease;
+  pointer-events: none; /*
+}
+
+
+.cookie-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 #cookieSvg {
