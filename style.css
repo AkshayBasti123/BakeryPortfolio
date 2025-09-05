@@ -182,3 +182,19 @@ footer {
   background: #e74c3c;
   color: white;
 }
+
+/* Contact section layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Center the social hover card */
+.social-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
