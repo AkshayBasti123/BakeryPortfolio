@@ -557,3 +557,17 @@ footer {
     flex-direction: column;
   }
 }
+
+.extras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.rating {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
