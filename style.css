@@ -23,7 +23,7 @@ body {
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: #8B5E3C;
+  color: #E5989B;
 }
 
 .nav-links {
@@ -51,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #E5989B;
+  color: white;
   position: relative;
 }
 
