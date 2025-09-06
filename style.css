@@ -8,7 +8,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, nav right */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
   position: fixed;
@@ -19,6 +19,12 @@ body {
   z-index: 1000;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -26,16 +32,10 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #E5989B; 
+  color: #E5989B;
   letter-spacing: 1px;
 }
 
-.nav-links {
-  margin-left: auto; 
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
 
 .nav-links a {
   text-decoration: none;
