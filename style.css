@@ -48,7 +48,6 @@ body {
   color: #E5989B;
 }
 
-/* Hero Section */
 .hero {
   background: url('images/bakery-hero.jpg') no-repeat center center/cover;
   height: 100vh;
@@ -75,14 +74,16 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
+  color: #E5989B;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 .btn {
