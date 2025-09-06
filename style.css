@@ -6,10 +6,9 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* center content */
   align-items: center;
   padding: 1rem 5%;
   position: fixed;
@@ -24,9 +23,13 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #E5989B; /* bakery pink */
+  color: #E5989B;
   letter-spacing: 1px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* perfect horizontal centering */
 }
+
 
 .nav-links {
   list-style: none;
