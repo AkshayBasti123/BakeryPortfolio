@@ -8,7 +8,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 5%;
   position: fixed;
@@ -20,22 +20,33 @@ body {
 }
 
 .nav-links {
+  position: absolute;
+  right: 5%;
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: bold;
   color: #E5989B;
   letter-spacing: 1px;
+  margin: 0 auto; /* centers inside flexbox */
 }
 
+.card-logo {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #E5989B;
+  letter-spacing: 3px;
+}
 
 .nav-links a {
   text-decoration: none;
